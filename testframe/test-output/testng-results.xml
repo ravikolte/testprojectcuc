@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite111" duration-ms="21190" started-at="2018-02-11T14:46:49Z" finished-at="2018-02-11T14:47:10Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testframe.runner.Deposit.depositrunner@64bfbc86]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testframe.runner.Login.Loginrunner@192b07fd]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testframe.runner.Withdraw.withdrawamountrunner@64bf3bbf]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="test" duration-ms="21190" started-at="2018-02-11T14:46:49Z" finished-at="2018-02-11T14:47:10Z">
+      <class name="com.testframe.runner.Deposit.depositrunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testframe.runner.Deposit.depositrunner@64bfbc86]" name="setUpClass" is-config="true" duration-ms="63" started-at="2018-02-11T20:17:02Z" finished-at="2018-02-11T20:17:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testframe.runner.Deposit.depositrunner@64bfbc86]" name="feature" duration-ms="4409" started-at="2018-02-11T20:17:02Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-02-11T20:17:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Amount will be deposited for the existing customer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testframe.runner.Deposit.depositrunner@64bfbc86]" name="tearDownClass" is-config="true" duration-ms="11" started-at="2018-02-11T20:17:07Z" finished-at="2018-02-11T20:17:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.testframe.runner.Deposit.depositrunner -->
+      <class name="com.testframe.runner.Login.Loginrunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testframe.runner.Login.Loginrunner@192b07fd]" name="setUpClass" is-config="true" duration-ms="472" started-at="2018-02-11T20:16:49Z" finished-at="2018-02-11T20:16:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testframe.runner.Login.Loginrunner@192b07fd]" name="feature" duration-ms="12263" started-at="2018-02-11T20:16:50Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-02-11T20:17:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Login to the page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testframe.runner.Login.Loginrunner@192b07fd]" name="tearDownClass" is-config="true" duration-ms="14" started-at="2018-02-11T20:17:02Z" finished-at="2018-02-11T20:17:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.testframe.runner.Login.Loginrunner -->
+      <class name="com.testframe.runner.Withdraw.withdrawamountrunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testframe.runner.Withdraw.withdrawamountrunner@64bf3bbf]" name="setUpClass" is-config="true" duration-ms="50" started-at="2018-02-11T20:17:07Z" finished-at="2018-02-11T20:17:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testframe.runner.Withdraw.withdrawamountrunner@64bf3bbf]" name="feature" duration-ms="3741" started-at="2018-02-11T20:17:07Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-02-11T20:17:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Withdraw Amount from Bank Account]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testframe.runner.Withdraw.withdrawamountrunner@64bf3bbf]" name="tearDownClass" is-config="true" duration-ms="12" started-at="2018-02-11T20:17:10Z" finished-at="2018-02-11T20:17:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.testframe.runner.Withdraw.withdrawamountrunner -->
+    </test> <!-- test -->
+  </suite> <!-- Suite111 -->
+</testng-results>
