@@ -14,16 +14,64 @@
 #@ (Tags/Labels):To group Scenarios 
 #<> (placeholder)
 #""
-## (Comments)
+c (Comments)
 
 #Sample Feature Definition Template
 
 Feature: Login to the page
 
 
-Scenario: Verify the Login Section
+Scenario: Verify the Login Section with valid username and valid password
 Given I am at login page
 	And Enter UserId
 	And Enter Password
 Then Click on Login
 
+## Below are manual testing scenrios that are not automated
+##Scenario: Verify the Login Section with valid username and invalid password
+##  Given I am at login page
+##	And Enter UserId
+##	And Enter Password
+##  Then Click on Login
+
+##Scenario: Verify the Login Section with invalid username and valid password
+##  Given I am at login page
+##	And Enter UserId
+##	And Enter Password
+##  Then Click on Login
+
+##Scenario: Verify the Login Section with invalid username and invalid password
+##  Given I am at login page
+##	And Enter UserId
+##	And Enter Password
+##  Then Click on Login
+
+##Scenario: Verify the Login Section with blank username and blank password
+##  Given I am at login page
+##	And Enter UserId
+##	And Enter Password
+##  Then Click on Login
+
+##Scenario: Verify the Login Section with blank username and valid password
+##  Given I am at login page
+##	And Enter UserId
+##	And Enter Password
+##  Then Click on Login
+
+##Scenario: Verify the Login Section with blank username and invalid password
+##  Given I am at login page
+##	And Enter UserId
+##	And Enter Password
+##  Then Click on Login
+
+##Scenario: Verify the Login Section with valid username and blank password
+##  Given I am at login page
+##	And Enter UserId
+##	And Enter Password
+##  Then Click on Login
+
+##Scenario: Verify the Login Section with invalid username and blank password
+##  Given I am at login page
+##	And Enter UserId
+##	And Enter Password
+##  Then Click on Login
