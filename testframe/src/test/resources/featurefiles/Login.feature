@@ -14,7 +14,7 @@
 #@ (Tags/Labels):To group Scenarios 
 #<> (placeholder)
 #""
-c (Comments)
+
 
 #Sample Feature Definition Template
 
