@@ -11,6 +11,7 @@ import framework.configreader.ObjectRepo;
 import framework.configreader.PropertyFileReader;
 import framework.helper.Logger.LoggerHelper;
 import framework.helper.Wait.WaitHelper;
+import framework.helper.assertionHelper.VerificationHelper;
 
 
 public class Login {
@@ -22,6 +23,10 @@ public class Login {
 
 	@FindBy(name = "btnLogin")
 	public WebElement loginbtn;
+	
+
+	@FindBy(tagName = "marquee")
+	public WebElement marquetext;
 
 	
 	 By user99GuruName = By.name("uid");
@@ -29,6 +34,10 @@ public class Login {
      By password99Guru = By.name("password");
      
      By loginbutton = By.name("btnLogin");
+     
+     
+     
+     String expectedmsgonlogin = "Welcome To Manager's Page of Guru99 Bank";
 	
 	public Login(WebDriver driver) {
 		this.driver = driver;
@@ -53,6 +62,20 @@ public class Login {
 	{
 		log.info("Click on LoginBtn");
 		driver.findElement(loginbutton).click();
+	}
+	
+	public boolean Assertlogin()
+	{
+		Boolean bool = VerificationHelper.verifyTextEquals(marquetext, expectedmsgonlogin);
+		if(bool = true)
+		{
+			log.info("Login Successful");
+		}
+		else{
+			log.info("Login UnSuccessful");
+		}
+		return bool;
+		
 	}
 	
 	

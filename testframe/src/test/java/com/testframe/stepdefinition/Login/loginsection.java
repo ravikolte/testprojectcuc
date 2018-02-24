@@ -11,6 +11,8 @@ public class loginsection {
 	Login log;
 	TestBase tb;
 	
+	
+	
 	@Given("^I am at login page$")
 	public void i_am_at_login_page() throws Throwable {
 		tb = new TestBase();
@@ -32,6 +34,8 @@ public class loginsection {
 	@Then("^Click on Login$")
 	public void click_on_Login() throws Throwable {
 	    log.ClickonLoginbtn();
+	    
 	}
+	
 	
 }
