@@ -81,9 +81,10 @@ public class Login {
 		if(ah.isAlertPresent())
 		{
 			log.info("Login UnSuccessful");
-			ah.AcceptAlert();
+			
 			sh = new Screenshothelper(TestBase.driver);
 			sh.captureScreenshot();
+			ah.AcceptAlert();
 			
 		}
 		else
