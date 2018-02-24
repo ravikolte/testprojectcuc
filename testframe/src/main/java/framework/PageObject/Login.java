@@ -80,11 +80,11 @@ public class Login {
 		//User or Password is not valid
 		if(ah.isAlertPresent())
 		{
+			ah.AcceptAlert();
 			log.info("Login UnSuccessful");
-			
 			sh = new Screenshothelper(TestBase.driver);
 			sh.captureScreenshot();
-			ah.AcceptAlert();
+			
 			
 		}
 		else

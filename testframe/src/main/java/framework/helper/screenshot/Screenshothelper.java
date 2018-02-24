@@ -28,7 +28,7 @@ public class Screenshothelper {
 		
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("C://Users//Ravi//testprojectcuc//git//testframe//src//main//resources//screenshotsarehere//t2.jpg"));
+		FileUtils.copyFile(src, new File("C://Users//Ravi//testprojectcuc//git//testframe//src//main//resources//screenshotsarehere//t3.jpg"));
 	}
 
 }
