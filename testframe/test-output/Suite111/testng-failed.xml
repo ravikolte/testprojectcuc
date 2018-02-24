@@ -4,8 +4,6 @@
   <test name="test">
     <classes>
       <class name="com.testframe.runner.Login.Loginrunner"/>
-      <class name="com.testframe.runner.Deposit.depositrunner"/>
-      <class name="com.testframe.runner.Withdraw.withdrawamountrunner"/>
     </classes>
   </test> <!-- test -->
 </suite> <!-- Failed suite [Suite111] -->

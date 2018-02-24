@@ -33,8 +33,9 @@ public class loginsection {
 
 	@Then("^Click on Login$")
 	public void click_on_Login() throws Throwable {
+		
 	    log.ClickonLoginbtn();
-	    
+	   
 	}
 	
 	
