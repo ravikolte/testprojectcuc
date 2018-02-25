@@ -22,6 +22,7 @@ public class NewCustomerpage {
 	WaitHelper waitHelper;
 	AlertHelper ah;
 	Screenshothelper sh;
+	String radioMale = "male";
 	
 
 	@FindBy(xpath = "//a[text()='New Customer']")
@@ -30,6 +31,9 @@ public class NewCustomerpage {
 	@FindBy(id = "message")
 	public WebElement Message;
 	
+	
+	@FindBy(xpath = "/html/body/table/tbody/tr/td/table/tbody/tr[5]/td[2]/input[1]")
+	public WebElement Male;
 	
 	By NewCustomerlink = By.xpath("//a[text()='New Customer']");
 	By CustomerName = By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr[4]/td[2]/input");
@@ -110,5 +114,12 @@ public class NewCustomerpage {
 			log.info("Test case failed");
 		}
 		return bool;
+	}
+	
+	public boolean verifymaleisSelected()
+	{
+		VerificationHelper.verifyElementisSelected(Male,radioMale);
+		return false;
+		
 	}
 }

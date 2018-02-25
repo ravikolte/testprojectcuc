@@ -59,4 +59,21 @@ public class VerificationHelper{
 			return flag;
 		}
 	}
+	
+	public static synchronized boolean verifyElementisSelected(WebElement radio, String text)
+	{
+		boolean flag = false;
+		if(radio.isSelected() && radio.getText().equals(text))
+		{
+			log.info("Male is selected by default");
+			flag=true;
+		}
+		else
+		{
+			return flag;
+		}
+		
+		return flag;
+		
+	}
 }

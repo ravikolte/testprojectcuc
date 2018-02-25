@@ -31,4 +31,9 @@ public void i_enter_and(String custname, String Gender, String dob, String addre
 	public void i_enter_and_match_actual_result_with_the(String customername, String expectedresult) throws Throwable {
 	    ncp.EnterCustomerNameAndValidatetheResult(customername, expectedresult);
 	}
+	
+	@Then("^Verify that male option is selected by default$")
+	public void verify_that_male_option_is_selected_by_default() throws Throwable {
+	   ncp.verifymaleisSelected();
+	}
 }

@@ -27,7 +27,7 @@ Then Click on Submit button
 
 Examples:
 |CustomerName|Gender| DOB     |Address  |City|State      |PIN   |MobileNumber|Email        |Password|
-|Ravi Kolte  | Male |06081989 |Magarpatta|Pune|Maharashtra|411013|1234567890  |test1545@test.com|test123 |
+|vky Kolte  | Male |06081989 |Magarpatta|Pune|Maharashtra|411013|1234567890  |test15456@test.com|test123 |
 
 
 Scenario Outline: Customer Name Text field validation
@@ -38,3 +38,9 @@ Examples:
 |CustomerName|ExpectedResult          |
 | |First character can not have space |
 |10|Numbers are not allowed|
+|$|Special characters are not allowed|
+
+Scenario: Verify that the Male radio button is selected by default
+And Click on NewCustomer
+Then Verify that male option is selected by default
+
