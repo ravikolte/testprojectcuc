@@ -80,7 +80,7 @@ public class Login {
 			ah.AcceptAlert();
 			log.info("Login UnSuccessful");
 			sh = new Screenshothelper(TestBase.driver);
-			sh.captureScreenshot();
+			sh.captureScreenshot("Login UnSuccessful");
 			
 			
 		}

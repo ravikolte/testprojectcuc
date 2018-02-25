@@ -29,3 +29,12 @@ Examples:
 |CustomerName|Gender| DOB     |Address  |City|State      |PIN   |MobileNumber|Email        |Password|
 |Ravi Kolte  | Male |06081989 |Magarpatta|Pune|Maharashtra|411013|1234567890  |test1545@test.com|test123 |
 
+
+Scenario Outline: Customer Name Text field validation
+And Click on NewCustomer
+Then I enter "<CustomerName>" and match actual result with the "<ExpectedResult>"
+
+Examples:
+|CustomerName|ExpectedResult          |
+| |First character can not have space |
+|10|Numbers are not allowed|

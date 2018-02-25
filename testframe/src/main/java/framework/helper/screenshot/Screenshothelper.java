@@ -24,11 +24,13 @@ public class Screenshothelper {
 		
 	}
 	
-	public void captureScreenshot() throws IOException {	
+	public void captureScreenshot(String imagefilename) throws IOException {	
 		
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("C://Users//Ravi//testprojectcuc//git//testframe//src//main//resources//screenshotsarehere//t3.jpg"));
+		FileUtils.copyFile(src, new File("C://Users//Ravi//testprojectcuc//git//testframe//src//main//resources//screenshotsarehere//"+imagefilename+".jpg"));
+		
+		
 	}
 
 }

@@ -1,5 +1,7 @@
 package framework.PageObject;
 
+import java.io.IOException;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,18 +10,28 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import framework.configreader.ObjectRepo;
+import framework.helper.Alert.AlertHelper;
 import framework.helper.Logger.LoggerHelper;
+import framework.helper.TestBase.TestBase;
 import framework.helper.Wait.WaitHelper;
+import framework.helper.assertionHelper.VerificationHelper;
+import framework.helper.screenshot.Screenshothelper;
 
 public class NewCustomerpage {
 
 	WebDriver driver;
 	private final Logger log = LoggerHelper.getLogger(Login.class);
 	WaitHelper waitHelper;
+	AlertHelper ah;
+	Screenshothelper sh;
 	
 
 	@FindBy(xpath = "/html/body/div[2]/div/ul/li[2]/a")
 	public WebElement NewCustomer;
+	
+	@FindBy(id = "message")
+	public WebElement Message;
+	
 	
 	By NewCustomerlink = By.xpath("/html/body/div[2]/div/ul/li[2]/a");
 	By CustomerName = By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr[4]/td[2]/input");
@@ -35,6 +47,7 @@ public class NewCustomerpage {
 	By Password = By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr[13]/td[2]/input");
 	By Submit =By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr[14]/td[2]/input[1]");
 	By Reset = By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr[14]/td[2]/input[2]");
+	
 	
 	public NewCustomerpage(WebDriver driver) {
 		this.driver = driver;
@@ -78,5 +91,20 @@ public class NewCustomerpage {
 	public void Reset()
 	{
 		driver.findElement(Reset).click();
+	}
+	
+	public boolean AssertCustomerNameField(String expectedresult) throws Exception
+	{
+		Boolean bool = VerificationHelper.verifyTextEquals(Message,expectedresult);
+		if(bool = true)
+			{ sh = new Screenshothelper(TestBase.driver);
+	          sh.captureScreenshot(expectedresult);
+			 log.info(expectedresult);
+			}
+		else
+		{
+			log.info("Test case failed");
+		}
+		return bool;
 	}
 }
