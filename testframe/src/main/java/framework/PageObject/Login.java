@@ -72,7 +72,7 @@ public class Login {
 		}
 		else
 		{
-		
+			Assertlogin();
 		}
 	}
 	
