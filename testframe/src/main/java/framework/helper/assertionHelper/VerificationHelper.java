@@ -65,7 +65,7 @@ public class VerificationHelper{
 		boolean flag = false;
 		if(radio.isSelected() && radio.getText().equals(text))
 		{
-			log.info("Male is selected by default");
+			log.info(text+" is selected");
 			flag=true;
 		}
 		else
