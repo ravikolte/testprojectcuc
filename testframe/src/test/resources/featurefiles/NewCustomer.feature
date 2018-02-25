@@ -42,5 +42,6 @@ Examples:
 
 
 Scenario: Verify that the Male radio button is selected by default
+And Click on NewCustomer
 Then Verify that male option is selected by default
 
