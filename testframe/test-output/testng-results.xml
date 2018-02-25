@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite111" duration-ms="193598" started-at="2018-02-25T05:12:41Z" finished-at="2018-02-25T05:15:55Z">
+  <suite name="Suite111" duration-ms="27968" started-at="2018-02-25T05:23:06Z" finished-at="2018-02-25T05:23:34Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testframe.runner.Login.Loginrunner@20322d26]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testframe.runner.NewCustomer.newcustomerrunner@192b07fd]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="test" duration-ms="193598" started-at="2018-02-25T05:12:41Z" finished-at="2018-02-25T05:15:55Z">
+    <test name="test" duration-ms="27968" started-at="2018-02-25T05:23:06Z" finished-at="2018-02-25T05:23:34Z">
       <class name="com.testframe.runner.Login.Loginrunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testframe.runner.Login.Loginrunner@20322d26]" name="setUpClass" is-config="true" duration-ms="500" started-at="2018-02-25T10:42:41Z" finished-at="2018-02-25T10:42:41Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testframe.runner.Login.Loginrunner@20322d26]" name="setUpClass" is-config="true" duration-ms="453" started-at="2018-02-25T10:53:06Z" finished-at="2018-02-25T10:53:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testframe.runner.Login.Loginrunner@20322d26]" name="feature" duration-ms="14050" started-at="2018-02-25T10:42:42Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-02-25T10:42:56Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testframe.runner.Login.Loginrunner@20322d26]" name="feature" duration-ms="14152" started-at="2018-02-25T10:53:06Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-02-25T10:53:20Z">
           <params>
             <param index="0">
               <value>
@@ -26,17 +26,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testframe.runner.Login.Loginrunner@20322d26]" name="tearDownClass" is-config="true" duration-ms="13" started-at="2018-02-25T10:42:56Z" finished-at="2018-02-25T10:42:56Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testframe.runner.Login.Loginrunner@20322d26]" name="tearDownClass" is-config="true" duration-ms="12" started-at="2018-02-25T10:53:20Z" finished-at="2018-02-25T10:53:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.testframe.runner.Login.Loginrunner -->
       <class name="com.testframe.runner.NewCustomer.newcustomerrunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testframe.runner.NewCustomer.newcustomerrunner@192b07fd]" name="setUpClass" is-config="true" duration-ms="95" started-at="2018-02-25T10:42:56Z" finished-at="2018-02-25T10:42:56Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testframe.runner.NewCustomer.newcustomerrunner@192b07fd]" name="setUpClass" is-config="true" duration-ms="72" started-at="2018-02-25T10:53:20Z" finished-at="2018-02-25T10:53:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testframe.runner.NewCustomer.newcustomerrunner@192b07fd]" name="feature" duration-ms="178757" started-at="2018-02-25T10:42:56Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-02-25T10:45:55Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testframe.runner.NewCustomer.newcustomerrunner@192b07fd]" name="feature" duration-ms="13131" started-at="2018-02-25T10:53:20Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-02-25T10:53:34Z">
           <params>
             <param index="0">
               <value>
@@ -44,108 +44,10 @@
               </value>
             </param>
           </params>
-          <exception class="cucumber.runtime.CucumberException">
-            <message>
-              <![CDATA[cucumber.runtime.CucumberException: Failed to instantiate class com.testframe.stepdefinition.NewCustomer.AddNewCustomer]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[cucumber.runtime.CucumberException: cucumber.runtime.CucumberException: Failed to instantiate class com.testframe.stepdefinition.NewCustomer.AddNewCustomer
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-Caused by: cucumber.runtime.CucumberException: Failed to instantiate class com.testframe.stepdefinition.NewCustomer.AddNewCustomer
-	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:46)
-	at cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:32)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:299)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	... 25 more
-Caused by: java.lang.reflect.InvocationTargetException
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:40)
-	... 35 more
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: /html/body/div[2]/div/ul/li[2]/a' (tried for 60 second(s) with 500 MILLISECONDS interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
-	at framework.helper.Wait.WaitHelper.waitForElement(WaitHelper.java:56)
-	at framework.PageObject.NewCustomerpage.<init>(NewCustomerpage.java:56)
-	at com.testframe.stepdefinition.NewCustomer.AddNewCustomer.<init>(AddNewCustomer.java:9)
-	... 40 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[2]/div/ul/li[2]/a"}
-  (Session info: chrome=62.0.3202.94)
-  (Driver info: chromedriver=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73),platform=Windows NT 6.3.9600 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
-System info: host: 'RAVI', ip: '192.168.0.15', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_91'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=WIN8_1, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\Ravi\AppData\Local\Temp\scoped_dir6080_22322}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 54b5bc113d33d28d6a314754a0f524c6
-*** Element info: {Using=xpath, value=/html/body/div[2]/div/ul/li[2]/a}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:641)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:414)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:513)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:302)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:288)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	... 43 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- cucumber.runtime.CucumberException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testframe.runner.NewCustomer.newcustomerrunner@192b07fd]" name="tearDownClass" is-config="true" duration-ms="29" started-at="2018-02-25T10:45:55Z" finished-at="2018-02-25T10:45:55Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testframe.runner.NewCustomer.newcustomerrunner@192b07fd]" name="tearDownClass" is-config="true" duration-ms="9" started-at="2018-02-25T10:53:34Z" finished-at="2018-02-25T10:53:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -1,7 +1,5 @@
 package framework.PageObject;
 
-import java.io.IOException;
-
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -26,14 +24,14 @@ public class NewCustomerpage {
 	Screenshothelper sh;
 	
 
-	@FindBy(xpath = "/html/body/div[2]/div/ul/li[2]/a")
+	@FindBy(xpath = "//a[text()='New Customer']")
 	public WebElement NewCustomer;
 	
 	@FindBy(id = "message")
 	public WebElement Message;
 	
 	
-	By NewCustomerlink = By.xpath("/html/body/div[2]/div/ul/li[2]/a");
+	By NewCustomerlink = By.xpath("//a[text()='New Customer']");
 	By CustomerName = By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr[4]/td[2]/input");
 	By GenderMale = By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr[5]/td[2]/input[1]");
 	By GenderFemale = By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr[5]/td[2]/input[2]");
