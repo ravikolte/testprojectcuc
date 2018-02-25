@@ -93,6 +93,12 @@ public class NewCustomerpage {
 		driver.findElement(Reset).click();
 	}
 	
+	public void EnterCustomerNameAndValidatetheResult(String custname, String expected) throws Exception
+	{
+		driver.findElement(CustomerName).sendKeys(custname);
+		AssertCustomerNameField(expected);
+	}
+	
 	public boolean AssertCustomerNameField(String expectedresult) throws Exception
 	{
 		Boolean bool = VerificationHelper.verifyTextEquals(Message,expectedresult);

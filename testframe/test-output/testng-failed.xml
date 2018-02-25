@@ -4,6 +4,24 @@
   <test name="test">
     <classes>
       <class name="com.testframe.runner.Login.Loginrunner"/>
+      <class name="com.testframe.runner.NewCustomer.newcustomerrunner"/>
     </classes>
   </test> <!-- test -->
+  <test name="test(failed)">
+    <classes>
+      <class name="com.testframe.runner.Login.Loginrunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.testframe.runner.Login.Loginrunner -->
+      <class name="com.testframe.runner.NewCustomer.newcustomerrunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- com.testframe.runner.NewCustomer.newcustomerrunner -->
+    </classes>
+  </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [Suite111] -->

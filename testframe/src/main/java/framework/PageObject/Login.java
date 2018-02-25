@@ -66,7 +66,14 @@ public class Login {
 	{
 		log.info("Click on LoginBtn");
 		driver.findElement(loginbutton).click();
+		if(!(marquetext.isDisplayed()))
+		{
 		handleunsuccessfulloginlert();
+		}
+		else
+		{
+		
+		}
 	}
 	
 	public void handleunsuccessfulloginlert() throws Exception

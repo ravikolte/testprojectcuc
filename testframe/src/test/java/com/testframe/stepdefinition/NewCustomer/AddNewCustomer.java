@@ -27,4 +27,8 @@ public void i_enter_and(String custname, String Gender, String dob, String addre
 
 	}
 	
+	@Then("^I enter \"([^\"]*)\" and match actual result with the \"([^\"]*)\"$")
+	public void i_enter_and_match_actual_result_with_the(String customername, String expectedresult) throws Throwable {
+	    
+	}
 }
