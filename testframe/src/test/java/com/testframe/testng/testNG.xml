@@ -5,7 +5,6 @@
 		<classes>
 		    <class name="com.testframe.runner.Login.Loginrunner"/>
 			<class name="com.testframe.runner.NewCustomer.newcustomerrunner"/>
-			
 		</classes>
 	</test>
 </suite> 
