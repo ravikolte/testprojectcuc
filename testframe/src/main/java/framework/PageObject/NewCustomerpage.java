@@ -98,10 +98,10 @@ public class NewCustomerpage {
 	public void EnterCustomerNameAndValidatetheResult(String custname, String expected) throws Exception
 	{
 		driver.findElement(CustomerName).sendKeys(custname);
-		AssertCustomerNameField(expected);
+		AssertField(expected);
 	}
 	
-	public boolean AssertCustomerNameField(String expectedresult) throws Exception
+	public boolean AssertField(String expectedresult) throws Exception
 	{
 		Boolean bool = VerificationHelper.verifyTextEquals(Message,expectedresult);
 		if(bool = true)
@@ -121,5 +121,35 @@ public class NewCustomerpage {
 		VerificationHelper.verifyElementisSelected(Male,radioMale);
 		return false;
 		
+	}
+	
+	public void EnterAddressAndValidatetheResult(String address, String expected) throws Exception
+	{
+		driver.findElement(Address).sendKeys(address);
+		AssertField(expected);
+	}
+	
+	public void EnterCityAndValidatetheResult(String city, String expected) throws Exception
+	{
+		driver.findElement(City).sendKeys(city);
+		AssertField(expected);
+	}
+	
+	public void EnterStateAndValidatetheResult(String state, String expected) throws Exception
+	{
+		driver.findElement(State).sendKeys(state);
+		AssertField(expected);
+	}
+	
+	public void EnterPINAndValidatetheResult(String pin, String expected) throws Exception
+	{
+		driver.findElement(PIN).sendKeys(pin);
+		AssertField(expected);
+	}
+	
+	public void EnterMobileAndValidatetheResult(String mobile, String expected) throws Exception
+	{
+		driver.findElement(MobileNumber).sendKeys(mobile);
+		AssertField(expected);
 	}
 }

@@ -45,3 +45,67 @@ Scenario: Verify that the Male radio button is selected by default
 And Click on NewCustomer
 Then Verify that male option is selected by default
 
+Scenario Outline: Address text area field validation
+And Click on NewCustomer
+Then Verify that Address text area "<Address>" and match actual result with the "<ExpectedResult>"
+
+Examples:
+|Address|ExpectedResult          |
+| |First character can not have space |
+|$|Special characters are not allowed|
+
+
+Scenario Outline: City field validation
+And Click on NewCustomer
+Then Verify that City field "<City>" and match actual result with the "<ExpectedResult>"
+
+Examples:
+|City|ExpectedResult          |
+| |First character can not have space |
+|10|Numbers are not allowed|
+|$|Special characters are not allowed|
+
+Scenario Outline: State field validation
+And Click on NewCustomer
+Then Verify that State field "<State>" and match actual result with the "<ExpectedResult>"
+
+Examples:
+|State|ExpectedResult          |
+| |First character can not have space |
+|10|Numbers are not allowed|
+|$|Special characters are not allowed|
+
+Scenario Outline: PIN field validation
+And Click on NewCustomer
+Then Verify that PIN field "<PIN>" and match actual result with the "<ExpectedResult>"
+
+Examples:
+|PIN|ExpectedResult          |
+| |First character can not have space |
+|wed|Characters are not allowed|
+|$|Special characters are not allowed|
+
+Scenario Outline: Mobilenumber field validation
+And Click on NewCustomer
+Then Verify that Mobilenumber field "<Mobilenumber>" and match actual result with the "<ExpectedResult>"
+
+Examples:
+|Mobilenumber|ExpectedResult          |
+| |First character can not have space |
+|wed|Characters are not allowed|
+|$|Special characters are not allowed|
+
+#Scenario : Check all text fields on New customer page should not be left blank
+# And click on NewCustomer
+# Press space key and then backspace for all the text fields
+# Verify that the appropriate message is displayed
+
+#Scenario : Email address validation
+# And click on NewCustomer
+# Verify that the email id not valid is displayed until a valid email address is entered
+
+
+
+
+
+
