@@ -84,6 +84,7 @@ Examples:
 | |First character can not have space |
 |wed|Characters are not allowed|
 |$|Special characters are not allowed|
+|12345|PIN Code must have 6 Digits|
 
 Scenario Outline: Mobilenumber field validation
 And Click on NewCustomer
@@ -103,6 +104,12 @@ Examples:
 #Scenario : Email address validation
 # And click on NewCustomer
 # Verify that the email id not valid is displayed until a valid email address is entered
+
+#Scenario : Reset button
+# And click on NewCustomer
+# Enter data in all the fields
+# Click on Reset button
+# Verify that all the data from the fields are cleared
 
 
 
