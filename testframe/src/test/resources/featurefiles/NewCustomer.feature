@@ -17,9 +17,10 @@
 ## (Comments)
 
 #Sample Feature Definition Template
-@tag
+
 Feature: Create New Customer 
 
+@SmokeTest
 Scenario Outline: Add new customer
 And Click on NewCustomer
 Then I enter "<CustomerName>" "<Gender>" "<DOB>" "<Address>" "<City>" "<State>" "<PIN>" "<MobileNumber>" "<Email>" and "<Password>"
@@ -27,9 +28,9 @@ Then Click on Submit button
 
 Examples:
 |CustomerName|Gender| DOB     |Address  |City|State      |PIN   |MobileNumber|Email        |Password|
-|vgky Kolte  | Male |06081989 |Magarpatta|Pune|Maharashtra|411013|1234567890  |tesghgkt165456@test.com|test123 |
+|vgky Kolte  | Male |06081989 |Magarpatta|Pune|Maharashtra|411013|1234567890  |tevsghgkt165456@test.com|test123 |
 
-
+@SmokeTest
 Scenario Outline: Customer Name Text field validation
 And Click on NewCustomer
 Then I enter "<CustomerName>" and match actual result with the "<ExpectedResult>"
@@ -54,7 +55,7 @@ Examples:
 | |First character can not have space |
 |$|Special characters are not allowed|
 
-
+@SmokeTest
 Scenario Outline: City field validation
 And Click on NewCustomer
 Then Verify that City field "<City>" and match actual result with the "<ExpectedResult>"
@@ -110,6 +111,7 @@ Examples:
 # Enter data in all the fields
 # Click on Reset button
 # Verify that all the data from the fields are cleared
+
 
 
 
