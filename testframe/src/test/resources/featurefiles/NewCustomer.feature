@@ -20,7 +20,7 @@
 
 Feature: Create New Customer 
 
-@SmokeTest
+
 Scenario Outline: Add new customer
 And Click on NewCustomer
 Then I enter "<CustomerName>" "<Gender>" "<DOB>" "<Address>" "<City>" "<State>" "<PIN>" "<MobileNumber>" "<Email>" and "<Password>"
@@ -28,7 +28,7 @@ Then Click on Submit button
 
 Examples:
 |CustomerName|Gender| DOB     |Address  |City|State      |PIN   |MobileNumber|Email        |Password|
-|vgky Kolte  | Male |06081989 |Magarpatta|Pune|Maharashtra|411013|1234567890  |tevsghgkt165456@test.com|test123 |
+|R Kolte  | Male |06081989 |Magarpatta|Pune|Maharashtra|411013|1234567890  |te165456@test.com|test123 |
 
 @SmokeTest
 Scenario Outline: Customer Name Text field validation
