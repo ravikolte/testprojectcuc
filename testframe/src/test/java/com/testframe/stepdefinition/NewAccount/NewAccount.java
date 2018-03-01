@@ -35,5 +35,20 @@ public void i_click_on_Submit_button_on_New_Account_form() throws Throwable {
     naf.Submit();
 }
 
+@Then("^Verify that Savings option is selected by default$")
+public void verify_that_Savings_option_is_selected_by_default() throws Throwable {
+    naf.CheckAccounttype();
+}
+
+@Then("^Verify that Customer Id \"([^\"]*)\" and match actual result with the \"([^\"]*)\"$")
+public void verify_that_Customer_Id_and_match_actual_result_with_the(String custid, String expected) throws Throwable {
+    naf.EnterCustomerIdAndValidatetheResult(custid, expected);
+}
+
+@Then("^Verify that Initial Deposit \"([^\"]*)\" and match actual result with the \"([^\"]*)\"$")
+public void verify_that_Initial_Deposit_and_match_actual_result_with_the(String initaldeposit, String expected) throws Throwable {
+  naf.EnterInitialAndValidatetheResult(initaldeposit, expected);
+}
+
 
 }

@@ -5,6 +5,7 @@
     <classes>
       <class name="com.testframe.runner.Login.Loginrunner"/>
       <class name="com.testframe.runner.NewCustomer.newcustomerrunner"/>
+      <class name="com.testframe.runner.NewAccount.newaccountrunner"/>
     </classes>
   </test> <!-- test -->
 </suite> <!-- Failed suite [Suite111] -->
