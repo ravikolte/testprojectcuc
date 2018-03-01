@@ -32,3 +32,28 @@ Examples:
     | customerid  |accountype | initialdeposit |
     | 38939       |  Savings  | 50000          |
     | 38939       |  Savings  | 200000         |
+    
+Scenario: Verify that the Savings is selected by default
+Given I am on homepage and click on New Account
+Then Verify that Savings option is selected by default
+
+Scenario Outline: Customer Id field validation
+Given I am on homepage and click on New Account
+Then Verify that Customer Id "<customerid>" and match actual result with the "<ExpectedResult>"
+
+Examples:
+|customerid|ExpectedResult          |
+| |First character can not have space |
+|$|Special characters are not allowed|
+|ad|Characters are not allowed|
+
+Scenario Outline: Initial Deposit field validation
+Given I am on homepage and click on New Account
+Then Verify that Initial Deposit "<intialdeposit>" and match actual result with the "<ExpectedResult>"
+
+Examples:
+|intialdeposit|ExpectedResult          |
+| |First character can not have space |
+|$|Special characters are not allowed|
+|ad|Characters are not allowed|
+
