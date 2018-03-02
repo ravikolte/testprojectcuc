@@ -25,4 +25,15 @@ public class withdrawamount {
 	    awf.Submit();
 	}
 	
+	@Then("^Verify that Account No \"([^\"]*)\" and match actual result with the \"([^\"]*)\"$")
+	public void verify_that_Account_No_and_match_actual_result_with_the(String accountno, String expected) throws Throwable {
+	    awf.EnterAccountNoAndValidatetheResult(accountno, expected);
+	}
+
+	@Then("^Verify that Amount \"([^\"]*)\" and match actual result with the \"([^\"]*)\"$")
+	public void verify_that_Amount_and_match_actual_result_with_the(String amount, String expected) throws Throwable {
+	   awf.EnterAmountAndValidatetheResult(amount, expected);
+	}
+
+	
 }

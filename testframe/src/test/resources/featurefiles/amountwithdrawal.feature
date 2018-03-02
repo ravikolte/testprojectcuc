@@ -36,3 +36,28 @@ Examples:
     | AccountNo| Amount  | Description           |
     | 38202    |  1000   | Withdrew thousand     |
     | 38202    |  2000   | Withdrew two thousand |
+    
+
+Scenario Outline: Account No field validation
+Given That I am homepage then click on Withdrawal 
+Then Verify that Account No "<accountno>" and match actual result with the "<ExpectedResult>"
+
+Examples:
+|accountno|ExpectedResult          |
+| |First character can not have space |
+|$|Special characters are not allowed|
+|ad|Characters are not allowed|
+
+Scenario Outline: Amount field validation
+Given That I am homepage then click on Withdrawal 
+Then Verify that Amount "<amount>" and match actual result with the "<ExpectedResult>"
+
+Examples:
+|amount|ExpectedResult          |
+| |First character can not have space |
+|$|Special characters are not allowed|
+|ad|Characters are not allowed|
+
+
+
+

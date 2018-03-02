@@ -9,7 +9,10 @@ import org.openqa.selenium.support.PageFactory;
 
 import framework.configreader.ObjectRepo;
 import framework.helper.Logger.LoggerHelper;
+import framework.helper.TestBase.TestBase;
 import framework.helper.Wait.WaitHelper;
+import framework.helper.assertionHelper.VerificationHelper;
+import framework.helper.screenshot.Screenshothelper;
 
 public class CustomizedStatementForm {
 	
@@ -17,6 +20,10 @@ public class CustomizedStatementForm {
 	WebDriver driver;
 	private final Logger log = LoggerHelper.getLogger(Login.class);
 	WaitHelper waitHelper;
+	Screenshothelper sh;
+
+	@FindBy(id = "message")
+	public WebElement Message;
 	
 	@FindBy(xpath = "//a[text()='Customised Statement']")
 	public WebElement CustomisedStatement;
@@ -56,5 +63,16 @@ public class CustomizedStatementForm {
     {
     	driver.findElement(Reset).click();
     }
-	
+	    
+       public void EnterMinimumTransactionvalueAndValidatetheResult(String mintransacvalue, String expected) throws Exception
+   	{
+   		driver.findElement(MinimumTransactionvalue).sendKeys(mintransacvalue);
+   		VerificationHelper.AssertField(expected,"MinimumTransactionvalue",Message);
+   	}
+       
+       public void EnterNumberofTransactionsAndValidatetheResult(String nooftransactions, String expected) throws Exception
+   	{
+   		driver.findElement(NumberofTransactions).sendKeys(nooftransactions);
+   		VerificationHelper.AssertField(expected,"NumberofTransactions",Message);
+   	}
 }

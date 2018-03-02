@@ -24,5 +24,15 @@ public class customizedstatement {
 	public void i_Click_on_Submit_button_on_Customized_Statemen_form() throws Throwable {
 	   csf.Submit();
 	}
+	
+	@Then("^Verify that Minimum Transaction Value \"([^\"]*)\" and match actual result with the \"([^\"]*)\"$")
+	public void verify_that_Minimum_Transaction_Value_and_match_actual_result_with_the(String mintrasacvalue, String expected) throws Throwable {
+	   csf.EnterMinimumTransactionvalueAndValidatetheResult(mintrasacvalue, expected);
+	}
+
+	@Then("^Verify that Number of Transaction \"([^\"]*)\" and match actual result with the \"([^\"]*)\"$")
+	public void verify_that_Number_of_Transaction_and_match_actual_result_with_the(String nooftransacations, String expected) throws Throwable {
+	  csf.EnterNumberofTransactionsAndValidatetheResult(nooftransacations, expected);
+	}
 
 }

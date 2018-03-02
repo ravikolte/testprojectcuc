@@ -14,7 +14,6 @@ import framework.helper.Logger.LoggerHelper;
 import framework.helper.TestBase.TestBase;
 import framework.helper.Wait.WaitHelper;
 import framework.helper.assertionHelper.VerificationHelper;
-import framework.helper.screenshot.Screenshothelper;
 
 public class NewAccountForm {
 
@@ -22,7 +21,7 @@ public class NewAccountForm {
 	private final Logger log = LoggerHelper.getLogger(Login.class);
 	WaitHelper waitHelper;
 	DropDownHelper ddh ;
-	Screenshothelper sh;
+
 	
 	@FindBy(xpath = "//a[text()='New Account']")
 	public WebElement NewAccount;
@@ -82,31 +81,16 @@ public class NewAccountForm {
       	Assert.assertEquals(actual, "Savings");
     }
     
-    public boolean AssertField(String expectedresult, String field) throws Exception
-	{
-		Boolean bool = VerificationHelper.verifyTextEquals(Message,expectedresult);
-		if(bool = true)
-			{ sh = new Screenshothelper(TestBase.driver);
-	          sh.captureScreenshot(field+expectedresult);
-			 log.info(expectedresult);
-			}
-		else
-		{
-			log.info("Test case failed");
-		}
-		return bool;
-	}
-    
     public void EnterCustomerIdAndValidatetheResult(String custid, String expected) throws Exception
 	{
 		driver.findElement(CustomerId).sendKeys(custid);
-		AssertField(expected,"CustomerId");
+		VerificationHelper.AssertField(expected,"CustomerId",Message);
 	}
     
     public void EnterInitialAndValidatetheResult(String deposit, String expected) throws Exception
 	{
 		driver.findElement(Initialdeposit).sendKeys(deposit);
-		AssertField(expected,"Initialdeposit");
+		VerificationHelper.AssertField(expected,"Initialdeposit",Message);
 	}
     
     

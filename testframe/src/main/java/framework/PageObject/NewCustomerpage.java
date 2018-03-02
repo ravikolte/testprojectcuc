@@ -98,23 +98,10 @@ public class NewCustomerpage {
 	public void EnterCustomerNameAndValidatetheResult(String custname, String expected) throws Exception
 	{
 		driver.findElement(CustomerName).sendKeys(custname);
-		AssertField(expected,"Customer");
+		VerificationHelper.AssertField(expected,"Customer",Message);
 	}
 	
-	public boolean AssertField(String expectedresult, String field) throws Exception
-	{
-		Boolean bool = VerificationHelper.verifyTextEquals(Message,expectedresult);
-		if(bool = true)
-			{ sh = new Screenshothelper(TestBase.driver);
-	          sh.captureScreenshot(field+expectedresult);
-			 log.info(expectedresult);
-			}
-		else
-		{
-			log.info("Test case failed");
-		}
-		return bool;
-	}
+
 	
 	public boolean verifymaleisSelected()
 	{
@@ -126,30 +113,30 @@ public class NewCustomerpage {
 	public void EnterAddressAndValidatetheResult(String address, String expected) throws Exception
 	{
 		driver.findElement(Address).sendKeys(address);
-		AssertField(expected,"Address");
+		VerificationHelper.AssertField(expected,"Address",Message);
 	}
 	
 	public void EnterCityAndValidatetheResult(String city, String expected) throws Exception
 	{
 		driver.findElement(City).sendKeys(city);
-		AssertField(expected, "city");
+		VerificationHelper.AssertField(expected, "city",Message);
 	}
 	
 	public void EnterStateAndValidatetheResult(String state, String expected) throws Exception
 	{
 		driver.findElement(State).sendKeys(state);
-		AssertField(expected,"state");
+		VerificationHelper.AssertField(expected,"state",Message);
 	}
 	
 	public void EnterPINAndValidatetheResult(String pin, String expected) throws Exception
 	{
 		driver.findElement(PIN).sendKeys(pin);
-		AssertField(expected,"PIN");
+		VerificationHelper.AssertField(expected,"PIN",Message);
 	}
 	
 	public void EnterMobileAndValidatetheResult(String mobile, String expected) throws Exception
 	{
 		driver.findElement(MobileNumber).sendKeys(mobile);
-		AssertField(expected, "Mobile");
+		VerificationHelper.AssertField(expected, "Mobile",Message);
 	}
 }

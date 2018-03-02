@@ -39,4 +39,14 @@ public class fundtransfer {
 	public void i_will_click_on_Submit_button_to_transfer_fund() throws Throwable {
 	    ft.Submit();
 	}
+	
+	@Then("^Verify that Payers Account No \"([^\"]*)\" and match actual result with the \"([^\"]*)\"$")
+	public void verify_that_Payers_Account_No_and_match_actual_result_with_the(String payersaccountno, String expected) throws Throwable {
+	   ft.EnterPayersAccountNoAndValidatetheResult(payersaccountno, expected);
+	}
+
+	@Then("^Verify that Payees Account No \"([^\"]*)\" and match actual result with the \"([^\"]*)\"$")
+	public void verify_that_Payees_Account_No_and_match_actual_result_with_the(String payeesaccount, String expected) throws Throwable {
+	  ft.EnterPayeesAccountNoAndValidatetheResult(payeesaccount, expected);
+	}
 }

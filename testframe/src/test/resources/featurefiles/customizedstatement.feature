@@ -30,3 +30,25 @@ Examples:
     | AccountNo| Fromdate  | ToDate   |MinimumTransactionvalue|NumberofTransactions|
     | 38202    |  01012018 | 01012018 |   1000                |  2                 |
     | 38202    |  01012018 | 01012018 |   2000                |  3                 |
+
+    
+Scenario Outline: Minimum Transaction Value field validation
+Given That I am homepage then click on Customised Statement 
+Then Verify that Minimum Transaction Value "<mintrasacvalue>" and match actual result with the "<ExpectedResult>"
+
+Examples:
+|mintrasacvalue|ExpectedResult          |
+| |First character can not have space |
+|$|Special characters are not allowed|
+|ad|Characters are not allowed|
+
+Scenario Outline: Number of Transaction field validation
+Given That I am homepage then click on Customised Statement
+Then Verify that Number of Transaction "<nooftransac>" and match actual result with the "<ExpectedResult>"
+
+Examples:
+|nooftransac|ExpectedResult          |
+| |First character can not have space |
+|$|Special characters are not allowed|
+|ad|Characters are not allowed|
+

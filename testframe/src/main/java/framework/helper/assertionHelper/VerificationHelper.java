@@ -4,12 +4,16 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 
 import framework.helper.Logger.LoggerHelper;
+import framework.helper.TestBase.TestBase;
+import framework.helper.screenshot.Screenshothelper;
 
 
 
 
 
 public class VerificationHelper{
+	
+	static Screenshothelper sh;
 
 	private static final  Logger log = LoggerHelper.getLogger(VerificationHelper.class);
 
@@ -77,6 +81,19 @@ public class VerificationHelper{
 		
 	}
 	
-	
+	public static synchronized boolean AssertField(String expectedresult, String field, WebElement Message) throws Exception
+	{
+		Boolean bool = VerificationHelper.verifyTextEquals(Message,expectedresult);
+		if(bool = true)
+			{ sh = new Screenshothelper(TestBase.driver);
+	          sh.captureScreenshot(field+expectedresult);
+			 log.info(expectedresult);
+			}
+		else
+		{
+			log.info("Test case failed");
+		}
+		return bool;
+	}
 	
 }

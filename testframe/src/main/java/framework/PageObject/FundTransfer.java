@@ -9,13 +9,20 @@ import org.openqa.selenium.support.PageFactory;
 
 import framework.configreader.ObjectRepo;
 import framework.helper.Logger.LoggerHelper;
+import framework.helper.TestBase.TestBase;
 import framework.helper.Wait.WaitHelper;
+import framework.helper.assertionHelper.VerificationHelper;
+import framework.helper.screenshot.Screenshothelper;
 
 public class FundTransfer {
 	
 	WebDriver driver;
 	private final Logger log = LoggerHelper.getLogger(Login.class);
 	WaitHelper waitHelper;
+	Screenshothelper sh;
+
+	@FindBy(id = "message")
+	public WebElement Message;
 	
 	@FindBy(xpath = "//a[text()='Fund Transfer']")
 	public WebElement FundTransfer;
@@ -64,5 +71,17 @@ public class FundTransfer {
     {
     	driver.findElement(Reset).click();
     }
+       
+       public void EnterPayeesAccountNoAndValidatetheResult(String payeeaccountno, String expected) throws Exception
+   	{
+   		driver.findElement(PayeesAccountNo).sendKeys(payeeaccountno);
+   		VerificationHelper.AssertField(expected,"PayeesAccountNo",Message);
+   	}
+       
+       public void EnterPayersAccountNoAndValidatetheResult(String payersaccountno, String expected) throws Exception
+   	{
+   		driver.findElement(PayersAccountNo).sendKeys(payersaccountno);
+   		VerificationHelper.AssertField(expected,"PayersAccountNo",Message);
+   	}
 
 }

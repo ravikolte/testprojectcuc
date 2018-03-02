@@ -34,3 +34,27 @@ Examples:
     | payersaccountno  |payeesaccountno |Amount|Description|
     | name1            |  5             | 100  |t          |
     | name2            |  7             | 200  |w          |
+    
+    
+Scenario Outline: Payers Account No field validation
+Given That I am homepage then click on Fund transfer page 
+Then Verify that Payers Account No "<payersaccountno>" and match actual result with the "<ExpectedResult>"
+
+Examples:
+|payersaccountno|ExpectedResult          |
+| |First character can not have space |
+|$|Special characters are not allowed|
+|ad|Characters are not allowed|
+
+Scenario Outline: Payees Account No field validation
+Given That I am homepage then click on Fund transfer page
+Then Verify that Payees Account No "<payeesaccountno>" and match actual result with the "<ExpectedResult>"
+
+Examples:
+|payeesaccountno|ExpectedResult          |
+| |First character can not have space |
+|$|Special characters are not allowed|
+|ad|Characters are not allowed|
+
+
+

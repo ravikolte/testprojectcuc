@@ -9,14 +9,22 @@ import org.openqa.selenium.support.PageFactory;
 
 import framework.configreader.ObjectRepo;
 import framework.helper.Logger.LoggerHelper;
+import framework.helper.TestBase.TestBase;
 import framework.helper.Wait.WaitHelper;
+import framework.helper.assertionHelper.VerificationHelper;
+import framework.helper.screenshot.Screenshothelper;
 
 public class AmountWithdrawalForm {
 	
 	WebDriver driver;
 	private final Logger log = LoggerHelper.getLogger(Login.class);
 	WaitHelper waitHelper;
+	Screenshothelper sh;
+
 	
+	@FindBy(id = "message")
+	public WebElement Message;
+		
 	@FindBy(xpath = "//a[text()='Withdrawal']")
 	public WebElement Withdrawal;
 	
@@ -50,4 +58,18 @@ public class AmountWithdrawalForm {
     {
     	driver.findElement(Reset).click();
     }
+    
+        
+       public void EnterAccountNoAndValidatetheResult(String accountno, String expected) throws Exception
+   	{
+   		driver.findElement(AccountNo).sendKeys(accountno);
+   		VerificationHelper.AssertField(expected,"AccountNo",Message);
+   	}
+       
+       public void EnterAmountAndValidatetheResult(String amount, String expected) throws Exception
+   	{
+   		driver.findElement(Amount).sendKeys(amount);
+   		VerificationHelper.AssertField(expected,"Amount",Message);
+   	}
+    
 }
