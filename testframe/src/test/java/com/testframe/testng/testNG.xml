@@ -4,9 +4,7 @@
 	<test name="test">
 		<classes>
 		    <class name="com.testframe.runner.Login.Loginrunner"/>
-            <class name="com.testframe.runner.NewCustomer.newcustomerrunner"/>
-			<class name="com.testframe.runner.NewAccount.newaccountrunner"/> 
-	    	<class name="com.testframe.runner.Withdraw.withdrawamountrunner"/>
+           
 		</classes>
 	</test>
 </suite> 
