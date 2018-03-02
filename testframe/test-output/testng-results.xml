@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite111" duration-ms="19157" started-at="2018-03-02T05:22:44Z" finished-at="2018-03-02T05:23:04Z">
+  <suite name="Suite111" duration-ms="60469" started-at="2018-03-02T08:43:16Z" finished-at="2018-03-02T08:44:16Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testframe.runner.Login.Loginrunner@20322d26]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testframe.runner.Withdraw.withdrawamountrunner@192b07fd]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="test" duration-ms="19157" started-at="2018-03-02T05:22:44Z" finished-at="2018-03-02T05:23:04Z">
+    <test name="test" duration-ms="60469" started-at="2018-03-02T08:43:16Z" finished-at="2018-03-02T08:44:16Z">
       <class name="com.testframe.runner.Login.Loginrunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testframe.runner.Login.Loginrunner@20322d26]" name="setUpClass" is-config="true" duration-ms="547" started-at="2018-03-02T10:52:44Z" finished-at="2018-03-02T10:52:45Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testframe.runner.Login.Loginrunner@20322d26]" name="setUpClass" is-config="true" duration-ms="1354" started-at="2018-03-02T14:13:16Z" finished-at="2018-03-02T14:13:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testframe.runner.Login.Loginrunner@20322d26]" name="feature" duration-ms="13212" started-at="2018-03-02T10:52:45Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-03-02T10:52:58Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testframe.runner.Login.Loginrunner@20322d26]" name="feature" duration-ms="44778" started-at="2018-03-02T14:13:17Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-03-02T14:14:02Z">
           <params>
             <param index="0">
               <value>
@@ -26,17 +26,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testframe.runner.Login.Loginrunner@20322d26]" name="tearDownClass" is-config="true" duration-ms="14" started-at="2018-03-02T10:52:58Z" finished-at="2018-03-02T10:52:58Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testframe.runner.Login.Loginrunner@20322d26]" name="tearDownClass" is-config="true" duration-ms="539" started-at="2018-03-02T14:14:03Z" finished-at="2018-03-02T14:14:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- com.testframe.runner.Login.Loginrunner -->
       <class name="com.testframe.runner.Withdraw.withdrawamountrunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testframe.runner.Withdraw.withdrawamountrunner@192b07fd]" name="setUpClass" is-config="true" duration-ms="82" started-at="2018-03-02T10:52:58Z" finished-at="2018-03-02T10:52:58Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.testframe.runner.Withdraw.withdrawamountrunner@192b07fd]" name="setUpClass" is-config="true" duration-ms="89" started-at="2018-03-02T14:14:03Z" finished-at="2018-03-02T14:14:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testframe.runner.Withdraw.withdrawamountrunner@192b07fd]" name="feature" duration-ms="5076" started-at="2018-03-02T10:52:58Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-03-02T10:53:03Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.testframe.runner.Withdraw.withdrawamountrunner@192b07fd]" name="feature" duration-ms="12405" started-at="2018-03-02T14:14:04Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-03-02T14:14:16Z">
           <params>
             <param index="0">
               <value>
@@ -53,8 +53,8 @@ Command duration or timeout: 0 milliseconds: null
 Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
 System info: host: 'RAVI', ip: '192.168.0.15', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=WIN8_1, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\Ravi\AppData\Local\Temp\scoped_dir1976_3154}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d9a520f84a6c17251f8635f8cf400eb2
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=WIN8_1, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\Ravi\AppData\Local\Temp\scoped_dir3468_22400}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ecff95303d834c6560fd8c02b4939c6
 *** Element info: {Using=xpath, value=//a[text()='Withdrawal']}]]>
             </message>
             <full-stacktrace>
@@ -65,8 +65,8 @@ Command duration or timeout: 0 milliseconds: null
 Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
 System info: host: 'RAVI', ip: '192.168.0.15', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=WIN8_1, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\Ravi\AppData\Local\Temp\scoped_dir1976_3154}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d9a520f84a6c17251f8635f8cf400eb2
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=WIN8_1, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\Ravi\AppData\Local\Temp\scoped_dir3468_22400}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ecff95303d834c6560fd8c02b4939c6
 *** Element info: {Using=xpath, value=//a[text()='Withdrawal']}
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
@@ -101,8 +101,8 @@ Command duration or timeout: 0 milliseconds: null
 Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
 System info: host: 'RAVI', ip: '192.168.0.15', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_91'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=WIN8_1, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\Ravi\AppData\Local\Temp\scoped_dir1976_3154}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d9a520f84a6c17251f8635f8cf400eb2
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=WIN8_1, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\Ravi\AppData\Local\Temp\scoped_dir3468_22400}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ecff95303d834c6560fd8c02b4939c6
 *** Element info: {Using=xpath, value=//a[text()='Withdrawal']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -129,7 +129,7 @@ Session ID: d9a520f84a6c17251f8635f8cf400eb2
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
 	at framework.helper.Wait.WaitHelper.waitForElement(WaitHelper.java:56)
-	at framework.PageObject.AmountWithdrawalForm.<init>(AmountWithdrawalForm.java:27)
+	at framework.PageObject.AmountWithdrawalForm.<init>(AmountWithdrawalForm.java:35)
 	at com.testframe.stepdefinition.Withdraw.withdrawamount.that_I_am_homepage_then_click_on_Withdrawal(withdrawamount.java:14)
 	at ✽.Given That I am homepage then click on Withdrawal(featurefiles/amountwithdrawal.feature:31)
 ]]>
@@ -138,7 +138,7 @@ Session ID: d9a520f84a6c17251f8635f8cf400eb2
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testframe.runner.Withdraw.withdrawamountrunner@192b07fd]" name="tearDownClass" is-config="true" duration-ms="33" started-at="2018-03-02T10:53:04Z" finished-at="2018-03-02T10:53:04Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.testframe.runner.Withdraw.withdrawamountrunner@192b07fd]" name="tearDownClass" is-config="true" duration-ms="48" started-at="2018-03-02T14:14:16Z" finished-at="2018-03-02T14:14:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

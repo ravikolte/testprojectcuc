@@ -150,8 +150,8 @@ Command duration or timeout: 0 milliseconds: null
 Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
 System info: host: &apos;RAVI&apos;, ip: &apos;192.168.0.15&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=WIN8_1, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\Ravi\AppData\Local\Temp\scoped_dir1976_3154}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d9a520f84a6c17251f8635f8cf400eb2
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=WIN8_1, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\Ravi\AppData\Local\Temp\scoped_dir3468_22400}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ecff95303d834c6560fd8c02b4939c6
 *** Element info: {Using=xpath, value=//a[text()=&apos;Withdrawal&apos;]}
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
@@ -162,8 +162,8 @@ Command duration or timeout: 0 milliseconds: null
 Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;
 System info: host: &apos;RAVI&apos;, ip: &apos;192.168.0.15&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_91&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=WIN8_1, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\Ravi\AppData\Local\Temp\scoped_dir1976_3154}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: d9a520f84a6c17251f8635f8cf400eb2
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=WIN8_1, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.35.528161 (5b82f2d2aae0ca24b877009200ced9065a772e73), userDataDir=C:\Users\Ravi\AppData\Local\Temp\scoped_dir3468_22400}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=62.0.3202.94, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5ecff95303d834c6560fd8c02b4939c6
 *** Element info: {Using=xpath, value=//a[text()=&apos;Withdrawal&apos;]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:173)
@@ -186,7 +186,7 @@ Session ID: d9a520f84a6c17251f8635f8cf400eb2
 	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:285)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
 	at framework.helper.Wait.WaitHelper.waitForElement(WaitHelper.java:56)
-	at framework.PageObject.AmountWithdrawalForm.&lt;init&gt;(AmountWithdrawalForm.java:27)
+	at framework.PageObject.AmountWithdrawalForm.&lt;init&gt;(AmountWithdrawalForm.java:35)
 	at com.testframe.stepdefinition.Withdraw.withdrawamount.that_I_am_homepage_then_click_on_Withdrawal(withdrawamount.java:14)
 	at ✽.Given That I am homepage then click on Withdrawal(featurefiles/amountwithdrawal.feature:31)
 ... Removed 28 stack frames
@@ -280,16 +280,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'com.testframe.runner.Login.Loginrunner')
-data.setCell(0, 3, 13212);
+data.setCell(0, 3, 44778);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'feature')
 data.setCell(1, 2, 'com.testframe.runner.Withdraw.withdrawamountrunner')
-data.setCell(1, 3, 5076);
+data.setCell(1, 3, 12405);
 window.suiteTableData['Suite111']= { tableData: data, tableDiv: 'times-div-Suite111'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <span class="suite-total-time">Total running time: 57 seconds</span>
               <div id="times-div-Suite111">
               </div> <!-- times-div-Suite111 -->
             </div> <!-- times-div -->
@@ -322,28 +322,28 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">feature(Login to the page)</span>
-                <span class="method-start">664 ms</span>
+                <span class="method-start">1549 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">13878 ms</span>
+                <span class="method-start">47078 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.testframe.runner.Withdraw.withdrawamountrunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpClass</span>
-                <span class="method-start">13894 ms</span>
+                <span class="method-start">47618 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(Withdraw Amount from Bank Account)</span>
-                <span class="method-start">13988 ms</span>
+                <span class="method-start">47991 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">19106 ms</span>
+                <span class="method-start">60403 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

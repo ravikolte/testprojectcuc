@@ -1,5 +1,7 @@
 package framework.PageObject;
 
+import java.io.IOException;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -35,6 +37,7 @@ public class NewCustomerpage {
 	@FindBy(xpath = "/html/body/table/tbody/tr/td/table/tbody/tr[5]/td[2]/input[1]")
 	public WebElement Male;
 	
+	By CustomerID = By.xpath("//td[text()='Customer ID']/following-sibling::td[1]");
 	By NewCustomerlink = By.xpath("//a[text()='New Customer']");
 	By CustomerName = By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr[4]/td[2]/input");
 	By GenderMale = By.xpath("/html/body/table/tbody/tr/td/table/tbody/tr[5]/td[2]/input[1]");
@@ -86,9 +89,14 @@ public class NewCustomerpage {
 		driver.findElement(Password).sendKeys(pass);
 	}
 	
-	public void Submit()
+	public void Submit() throws IOException
 	{
+		
 		driver.findElement(Submit).click();
+		String CustomerId = driver.findElement(CustomerID).getText();
+		log.info("Customer ID of newly created is : "+CustomerId);
+		sh = new Screenshothelper(TestBase.driver);
+        sh.captureScreenshot(CustomerId);
 	}
 	public void Reset()
 	{
