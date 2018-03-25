@@ -28,7 +28,7 @@ Then Click on Submit button
 
 Examples:
 |CustomerName|Gender| DOB     |Address  |City|State      |PIN   |MobileNumber|Email        |Password|
-|R Kolte  | Male |06081989 |Magarpatta|Pune|Maharashtra|411013|1234567890  |rg@test.com|test1623 |
+|R Kolte  | Male |060819891 |Magarpatta|Pune|Maharashtra|411013|1234567890  |rg@test.com|test1623 |
 
 @SmokeTest
 Scenario Outline: Customer Name Text field validation

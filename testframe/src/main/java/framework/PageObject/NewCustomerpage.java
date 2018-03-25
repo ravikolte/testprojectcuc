@@ -16,6 +16,7 @@ import framework.helper.TestBase.TestBase;
 import framework.helper.Wait.WaitHelper;
 import framework.helper.assertionHelper.VerificationHelper;
 import framework.helper.screenshot.Screenshothelper;
+import framework.utility.setuptestbed;
 
 public class NewCustomerpage {
 
@@ -24,6 +25,7 @@ public class NewCustomerpage {
 	WaitHelper waitHelper;
 	AlertHelper ah;
 	Screenshothelper sh;
+	setuptestbed sb;
 	String radioMale = "male";
 	
 
@@ -89,14 +91,17 @@ public class NewCustomerpage {
 		driver.findElement(Password).sendKeys(pass);
 	}
 	
-	public void Submit() throws IOException
+	public void Submit() throws IOException, InterruptedException
 	{
 		
 		driver.findElement(Submit).click();
+		Thread.sleep(3000);
 		String CustomerId = driver.findElement(CustomerID).getText();
 		log.info("Customer ID of newly created is : "+CustomerId);
 		sh = new Screenshothelper(TestBase.driver);
         sh.captureScreenshot(CustomerId);
+       
+        
 	}
 	public void Reset()
 	{

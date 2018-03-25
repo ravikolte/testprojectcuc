@@ -4,7 +4,8 @@
   <test name="test">
     <classes>
       <class name="com.testframe.runner.Login.Loginrunner"/>
-      <class name="com.testframe.runner.Withdraw.withdrawamountrunner"/>
+      <class name="com.testframe.runner.Failed.MyScenarios"/>
+      <class name="com.testframe.runner.Failed.FailedScenarios"/>
     </classes>
   </test> <!-- test -->
   <test name="test(failed)">
@@ -12,16 +13,10 @@
       <class name="com.testframe.runner.Login.Loginrunner">
         <methods>
           <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0 1 2"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- com.testframe.runner.Login.Loginrunner -->
-      <class name="com.testframe.runner.Withdraw.withdrawamountrunner">
-        <methods>
-          <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
-        </methods>
-      </class> <!-- com.testframe.runner.Withdraw.withdrawamountrunner -->
     </classes>
   </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [Suite111] -->

@@ -16,15 +16,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
 
 import com.gargoylesoftware.htmlunit.ElementNotFoundException;
 import com.google.common.base.Function;
 
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
+import framework.PageObject.Managerleftpanel;
 import framework.configreader.ObjectRepo;
 import framework.configreader.PropertyFileReader;
 import framework.configuration.browser.BrowserType;
@@ -179,6 +175,8 @@ public class TestBase {
 
 	//call once after logout
 	public void after() throws Exception {
+		Managerleftpanel mfp = new Managerleftpanel(TestBase.driver);
+		mfp.Logout();
 		driver.quit();
 		log.info("");
 	}
