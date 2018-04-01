@@ -16,7 +16,6 @@ import framework.helper.TestBase.TestBase;
 import framework.helper.Wait.WaitHelper;
 import framework.helper.assertionHelper.VerificationHelper;
 import framework.helper.screenshot.Screenshothelper;
-import framework.utility.setuptestbed;
 
 public class NewCustomerpage {
 
