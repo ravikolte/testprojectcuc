@@ -22,6 +22,16 @@
     <artifactId>maven-compiler-plugin</artifactId>
     <version>3.7.0</version>
 </dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.vimalselvam/cucumber-extentsreport -->
+<!-- https://mvnrepository.com/artifact/com.relevantcodes/extentreports -->
+
+<dependency>
+    <groupId>com.vimalselvam</groupId>
+    <artifactId>cucumber-extentsreport</artifactId>
+    <version>3.0.1</version>
+</dependency>
+
 		
 		<dependency>
 		

@@ -4,7 +4,6 @@
 	<test name="test">
 		<classes>
 		    <class name="com.testframe.runner.Login.Loginrunner"/>
-		    
-           </classes>
+		             </classes>
 	</test>
 </suite> 
