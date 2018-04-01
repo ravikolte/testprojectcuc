@@ -25,7 +25,7 @@ public class NewCustomerpage {
 	WaitHelper waitHelper;
 	AlertHelper ah;
 	Screenshothelper sh;
-	setuptestbed sb;
+
 	String radioMale = "male";
 	
 
