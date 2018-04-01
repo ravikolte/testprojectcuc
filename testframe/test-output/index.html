@@ -102,17 +102,17 @@
                     <div class="method-list-content failed suite-Suite111">
                       <span>
                         <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite111" title="com.testframe.runner.Login.Loginrunner" hash-for-method="feature(Create a New Account for the customer)">feature(Create a New Account for the customer)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite111" title="com.testframe.runner.Login.Loginrunner" hash-for-method="feature(Login to the page)">feature(Login to the page)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite111" title="com.testframe.runner.Login.Loginrunner" hash-for-method="feature(Create New Customer)">feature(Create New Customer)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite111" title="com.testframe.runner.Login.Loginrunner" hash-for-method="feature(Create a New Account for the customer)">feature(Create a New Account for the customer)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite111 -->
@@ -135,6 +135,32 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="feature(Create a New Account for the customer)">
+                  </a> <!-- feature(Create a New Account for the customer) -->
+                  <span class="method-name">feature</span>
+                  <span class="parameters">(Create a New Account for the customer)</span>
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
+	at cucumber.runtime.formatter.PluginFactory.instantiate(PluginFactory.java:114)
+	at cucumber.runtime.formatter.PluginFactory.create(PluginFactory.java:87)
+	at cucumber.runtime.RuntimeOptions.getPlugins(RuntimeOptions.java:241)
+	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:287)
+	at com.sun.proxy.$Proxy16.uri(Unknown Source)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:160)
+	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
+	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:51)
+	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:35)
+	at cucumber.runtime.formatter.PluginFactory.instantiate(PluginFactory.java:107)
+	... 31 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Feature)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="feature(Login to the page)">
                   </a> <!-- feature(Login to the page) -->
                   <span class="method-name">feature</span>
@@ -144,13 +170,13 @@
 	at cucumber.runtime.formatter.PluginFactory.create(PluginFactory.java:87)
 	at cucumber.runtime.RuntimeOptions.getPlugins(RuntimeOptions.java:241)
 	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:287)
-	at com.sun.proxy.$Proxy15.uri(Unknown Source)
+	at com.sun.proxy.$Proxy16.uri(Unknown Source)
 	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:160)
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
-	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:45)
-	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:32)
+	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:51)
+	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:35)
 	at cucumber.runtime.formatter.PluginFactory.instantiate(PluginFactory.java:107)
 	... 31 more
 Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.reporter.ExtentHtmlReporter
@@ -176,39 +202,13 @@ Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.report
 	at cucumber.runtime.formatter.PluginFactory.create(PluginFactory.java:87)
 	at cucumber.runtime.RuntimeOptions.getPlugins(RuntimeOptions.java:241)
 	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:287)
-	at com.sun.proxy.$Proxy15.uri(Unknown Source)
+	at com.sun.proxy.$Proxy16.uri(Unknown Source)
 	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:160)
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
-	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:45)
-	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:32)
-	at cucumber.runtime.formatter.PluginFactory.instantiate(PluginFactory.java:107)
-	... 31 more
-... Removed 28 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Feature)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="feature(Create a New Account for the customer)">
-                  </a> <!-- feature(Create a New Account for the customer) -->
-                  <span class="method-name">feature</span>
-                  <span class="parameters">(Create a New Account for the customer)</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
-	at cucumber.runtime.formatter.PluginFactory.instantiate(PluginFactory.java:114)
-	at cucumber.runtime.formatter.PluginFactory.create(PluginFactory.java:87)
-	at cucumber.runtime.RuntimeOptions.getPlugins(RuntimeOptions.java:241)
-	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:287)
-	at com.sun.proxy.$Proxy15.uri(Unknown Source)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:160)
-	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
-	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
-Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
-	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:45)
-	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:32)
+	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:51)
+	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:35)
 	at cucumber.runtime.formatter.PluginFactory.instantiate(PluginFactory.java:107)
 	... 31 more
 ... Removed 28 stack frames
@@ -283,11 +283,11 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'feature')
 data.setCell(0, 2, 'com.testframe.runner.Login.Loginrunner')
-data.setCell(0, 3, 18);
+data.setCell(0, 3, 17);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'feature')
 data.setCell(1, 2, 'com.testframe.runner.Login.Loginrunner')
-data.setCell(1, 3, 6);
+data.setCell(1, 3, 4);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'feature')
 data.setCell(2, 2, 'com.testframe.runner.Login.Loginrunner')
@@ -296,7 +296,7 @@ window.suiteTableData['Suite111']= { tableData: data, tableDiv: 'times-div-Suite
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 27 ms</span>
+              <span class="suite-total-time">Total running time: 24 ms</span>
               <div id="times-div-Suite111">
               </div> <!-- times-div-Suite111 -->
             </div> <!-- times-div -->
@@ -331,31 +331,25 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(Login to the page)</span>
-                <span class="method-start">911 ms</span>
+                <span class="method-start">619 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(Create New Customer)</span>
-                <span class="method-start">949 ms</span>
+                <span class="method-start">642 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">feature(Create a New Account for the customer)</span>
-                <span class="method-start">959 ms</span>
+                <span class="method-start">650 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">reportSetup</span>
-                <span class="method-start">965 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-class after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">969 ms</span>
+                <span class="method-start">656 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 25 20:20:15 IST 2018</td>
+<td>Started on:</td><td>Sun Apr 01 10:55:24 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (990 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (676 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,75 +75,27 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.testframe.runner.Login.Loginrunner.reportSetup()'><b>reportSetup</b><br>Test class: com.testframe.runner.Login.Loginrunner</td>
-<td><div><pre>java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
-	at com.cucumber.listener.Reporter.loadXMLConfig(Reporter.java:47)
-	at com.testframe.runner.Login.Loginrunner.reportSetup(Loginrunner.java:26)
-Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.reporter.ExtentHtmlReporter
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 26 more
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1961002599", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1961002599'><pre>java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
-	at com.cucumber.listener.Reporter.loadXMLConfig(Reporter.java:47)
-	at com.testframe.runner.Login.Loginrunner.reportSetup(Loginrunner.java:26)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-	at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:232)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:115)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.reporter.ExtentHtmlReporter
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
-	... 26 more
-</pre></div></td>
-<td>0</td>
-<td>com.testframe.runner.Login.Loginrunner@192b07fd</td></tr>
-<tr>
 <td title='com.testframe.runner.Login.Loginrunner.tearDownClass()'><b>tearDownClass</b><br>Test class: com.testframe.runner.Login.Loginrunner</td>
 <td><div><pre>cucumber.runtime.CucumberException: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
 	at cucumber.runtime.formatter.PluginFactory.instantiate(PluginFactory.java:114)
 	at cucumber.runtime.formatter.PluginFactory.create(PluginFactory.java:87)
 	at cucumber.runtime.RuntimeOptions.getPlugins(RuntimeOptions.java:241)
 	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:287)
-	at com.sun.proxy.$Proxy15.done(Unknown Source)
+	at com.sun.proxy.$Proxy16.done(Unknown Source)
 	at cucumber.api.testng.TestNGCucumberRunner.finish(TestNGCucumberRunner.java:76)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.tearDownClass(AbstractTestNGCucumberTests.java:34)
 Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
-	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:45)
-	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:32)
+	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:51)
+	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:35)
 	at cucumber.runtime.formatter.PluginFactory.instantiate(PluginFactory.java:107)
 	... 30 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace434398524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace434398524'><pre>cucumber.runtime.CucumberException: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace402249858", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace402249858'><pre>cucumber.runtime.CucumberException: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
 	at cucumber.runtime.formatter.PluginFactory.instantiate(PluginFactory.java:114)
 	at cucumber.runtime.formatter.PluginFactory.create(PluginFactory.java:87)
 	at cucumber.runtime.RuntimeOptions.getPlugins(RuntimeOptions.java:241)
 	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:287)
-	at com.sun.proxy.$Proxy15.done(Unknown Source)
+	at com.sun.proxy.$Proxy16.done(Unknown Source)
 	at cucumber.api.testng.TestNGCucumberRunner.finish(TestNGCucumberRunner.java:76)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.tearDownClass(AbstractTestNGCucumberTests.java:34)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -171,8 +123,8 @@ Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
-	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:45)
-	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:32)
+	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:51)
+	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:35)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -181,7 +133,7 @@ Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter
 	... 30 more
 </pre></div></td>
 <td>0</td>
-<td>com.testframe.runner.Login.Loginrunner@192b07fd</td></tr>
+<td>com.testframe.runner.Login.Loginrunner@52a86356</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
@@ -197,13 +149,13 @@ Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter
 	at cucumber.runtime.formatter.PluginFactory.create(PluginFactory.java:87)
 	at cucumber.runtime.RuntimeOptions.getPlugins(RuntimeOptions.java:241)
 	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:287)
-	at com.sun.proxy.$Proxy15.uri(Unknown Source)
+	at com.sun.proxy.$Proxy16.uri(Unknown Source)
 	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:160)
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
-	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:45)
-	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:32)
+	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:51)
+	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:35)
 	at cucumber.runtime.formatter.PluginFactory.instantiate(PluginFactory.java:107)
 	... 31 more
 Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.reporter.ExtentHtmlReporter
@@ -212,13 +164,13 @@ Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.report
 	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
 	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 38 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace292641216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace292641216'><pre>cucumber.runtime.CucumberException: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1258372214", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1258372214'><pre>cucumber.runtime.CucumberException: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
 	at cucumber.runtime.formatter.PluginFactory.instantiate(PluginFactory.java:114)
 	at cucumber.runtime.formatter.PluginFactory.create(PluginFactory.java:87)
 	at cucumber.runtime.RuntimeOptions.getPlugins(RuntimeOptions.java:241)
 	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:287)
-	at com.sun.proxy.$Proxy15.uri(Unknown Source)
+	at com.sun.proxy.$Proxy16.uri(Unknown Source)
 	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:160)
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
@@ -247,8 +199,8 @@ Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.report
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
-	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:45)
-	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:32)
+	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:51)
+	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:35)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -263,7 +215,7 @@ Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.report
 	... 38 more
 </pre></div></td>
 <td>0</td>
-<td>com.testframe.runner.Login.Loginrunner@192b07fd</td></tr>
+<td>com.testframe.runner.Login.Loginrunner@52a86356</td></tr>
 <tr>
 <td title='com.testframe.runner.Login.Loginrunner.feature()'><b>feature</b><br>Test class: com.testframe.runner.Login.Loginrunner<br>Test method: Runs Cucumber Feature<br>Parameters: Create New Customer</td>
 <td><div><pre>cucumber.runtime.CucumberException: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
@@ -271,22 +223,22 @@ Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.report
 	at cucumber.runtime.formatter.PluginFactory.create(PluginFactory.java:87)
 	at cucumber.runtime.RuntimeOptions.getPlugins(RuntimeOptions.java:241)
 	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:287)
-	at com.sun.proxy.$Proxy15.uri(Unknown Source)
+	at com.sun.proxy.$Proxy16.uri(Unknown Source)
 	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:160)
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
-	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:45)
-	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:32)
+	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:51)
+	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:35)
 	at cucumber.runtime.formatter.PluginFactory.instantiate(PluginFactory.java:107)
 	... 31 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace539690370", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace539690370'><pre>cucumber.runtime.CucumberException: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1898325501", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1898325501'><pre>cucumber.runtime.CucumberException: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
 	at cucumber.runtime.formatter.PluginFactory.instantiate(PluginFactory.java:114)
 	at cucumber.runtime.formatter.PluginFactory.create(PluginFactory.java:87)
 	at cucumber.runtime.RuntimeOptions.getPlugins(RuntimeOptions.java:241)
 	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:287)
-	at com.sun.proxy.$Proxy15.uri(Unknown Source)
+	at com.sun.proxy.$Proxy16.uri(Unknown Source)
 	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:160)
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
@@ -315,8 +267,8 @@ Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
-	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:45)
-	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:32)
+	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:51)
+	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:35)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -325,7 +277,7 @@ Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter
 	... 31 more
 </pre></div></td>
 <td>0</td>
-<td>com.testframe.runner.Login.Loginrunner@192b07fd</td></tr>
+<td>com.testframe.runner.Login.Loginrunner@52a86356</td></tr>
 <tr>
 <td title='com.testframe.runner.Login.Loginrunner.feature()'><b>feature</b><br>Test class: com.testframe.runner.Login.Loginrunner<br>Test method: Runs Cucumber Feature<br>Parameters: Create a New Account for the customer</td>
 <td><div><pre>cucumber.runtime.CucumberException: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
@@ -333,22 +285,22 @@ Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter
 	at cucumber.runtime.formatter.PluginFactory.create(PluginFactory.java:87)
 	at cucumber.runtime.RuntimeOptions.getPlugins(RuntimeOptions.java:241)
 	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:287)
-	at com.sun.proxy.$Proxy15.uri(Unknown Source)
+	at com.sun.proxy.$Proxy16.uri(Unknown Source)
 	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:160)
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
 Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
-	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:45)
-	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:32)
+	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:51)
+	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:35)
 	at cucumber.runtime.formatter.PluginFactory.instantiate(PluginFactory.java:107)
 	... 31 more
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1489743810", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1489743810'><pre>cucumber.runtime.CucumberException: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1967355409", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1967355409'><pre>cucumber.runtime.CucumberException: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
 	at cucumber.runtime.formatter.PluginFactory.instantiate(PluginFactory.java:114)
 	at cucumber.runtime.formatter.PluginFactory.create(PluginFactory.java:87)
 	at cucumber.runtime.RuntimeOptions.getPlugins(RuntimeOptions.java:241)
 	at cucumber.runtime.RuntimeOptions$1.invoke(RuntimeOptions.java:287)
-	at com.sun.proxy.$Proxy15.uri(Unknown Source)
+	at com.sun.proxy.$Proxy16.uri(Unknown Source)
 	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:160)
 	at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
 	at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
@@ -377,8 +329,8 @@ Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
 Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter/ExtentHtmlReporter
-	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:45)
-	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:32)
+	at com.cucumber.listener.ExtentCucumberFormatter.setExtentHtmlReport(ExtentCucumberFormatter.java:51)
+	at com.cucumber.listener.ExtentCucumberFormatter.&lt;init&gt;(ExtentCucumberFormatter.java:35)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -387,7 +339,7 @@ Caused by: java.lang.NoClassDefFoundError: com/aventstack/extentreports/reporter
 	... 31 more
 </pre></div></td>
 <td>0</td>
-<td>com.testframe.runner.Login.Loginrunner@192b07fd</td></tr>
+<td>com.testframe.runner.Login.Loginrunner@52a86356</td></tr>
 </table><p>
 </body>
 </html>
